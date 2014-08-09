@@ -1,0 +1,10 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout">
+    <div style="float:left; min-height:16px; padding-left: 24px; line-height: 16px; margin-left: 24px; margin-right: 24px;" id="shareable-link">
+        <a href="#" onclick="alert('Shareable URL for this page: ${it.shareableUrl}')">Shareable Link</a>
+    </div>
+    <script>
+        var footer = document.getElementById('shareable-link');
+        var f = document.getElementById('footer');
+        f.insertBefore(footer,f.firstChild);
+    </script>
+</j:jelly>
